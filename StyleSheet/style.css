@@ -78,6 +78,15 @@ a {
   display: inline-block;
 }
 
+/* footer */
+footer{
+  width: 100%;
+  background-color: rgb(243, 227, 0);
+  bottom:0;
+  text-align: center;
+  color: purple;
+}
+
 /* Slideshow styling */
 /* need to add javascript for it to work */
 .slideshow-container {
