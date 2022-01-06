@@ -78,6 +78,10 @@ nav {
   display: inline-block;
 }
 
+.nav-menu a:hover {
+  text-decoration: underline;
+  font-size: 26px;
+}
 
 /* index.html styling --------------------*/
 
@@ -167,11 +171,56 @@ img {vertical-align: middle;} */
   width: 100%;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.in-text h2 {
+  color: rgb(1, 3, 1);
+  font-size: 26px;
+}
+
+.in-text {
+  position: absolute;
+  bottom: 130px;
+  left: 350px;
+}
+
+.ticket-container {
+  padding: 20px;
+  margin: 2px;
+}
+
+.ticket-item {
+  border: 1px solid  rgb(243, 243, 226);
+  background-color: rgb(243, 243, 226);
+  margin: 10px;
+  display: inline-block;
+}
+
+.ticket-item h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+.ticket-item button {
+  margin: auto 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 3px solid white;
+  font-size: 1rem;
+  background: rgb(255, 252, 96);
+}
+
 
 
 
 /* contacts.html styling---------------------- */
+.description-item {grid-area:description-item;}
 
+.mapouter {grid-area:map;}
+
+.form-container {grid-area:form;}
 /* CONTACT FORM */
 
 /* Style inputs with type="text", select elements and textareas */
