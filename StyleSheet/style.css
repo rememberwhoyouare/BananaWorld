@@ -212,6 +212,15 @@ img {vertical-align: middle;} */
   background: rgb(255, 252, 96);
 }
 
+.ticket-item .ticket-img {
+  opacity: 1;
+  border-radius: 5px;
+  transition: .5s ease;
+}
+
+.ticket-item:hover .ticket-img {
+  opacity: 0.3;
+}
 
 
 
