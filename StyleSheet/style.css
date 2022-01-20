@@ -49,7 +49,8 @@ p{
   display: flex;
   justify-content: space-between;
 
-  background-color: palegoldenrod;
+  background-color: rgba(238, 232, 170, 70%);
+  backdrop-filter: blur(5px);
   height: 10vh;
   margin: 0 0;
 }
