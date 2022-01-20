@@ -176,6 +176,8 @@ img {vertical-align: middle;} */
 .ticket-img-container {
   position: relative;
   text-align: center;
+  overflow: hidden;
+  height: 300px;
 }
 
 .in-text h2 {
@@ -185,9 +187,11 @@ img {vertical-align: middle;} */
 
 .in-text {
   position: absolute;
-  bottom: 130px;
-  left: 350px;
-  border: 3px dotted rgb(0, 0, 0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
   padding: 15px;
 }
 
