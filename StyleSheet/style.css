@@ -6,7 +6,8 @@
 
 body{
   background: white;
-  height: 100%
+  height: 100%;
+  margin: 0 0;
 }
 
 h1{
@@ -41,32 +42,27 @@ p{
   color: black;
 }
 
-header { grid-area: header;}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
 
-header {
-  position: relative;
-  float: left;
-  padding-left: 20px;
-  top: -20px;
+  background-color: palegoldenrod;
+  height: 10vh;
+  margin: 0 0;
 }
 
 
 /* Nav CSS ---------------------*/
-nav {grid-area: nav;}
-nav {
-  width: 100%;
-  height: 150px;
-  background-color: rgb(255, 255, 255);
-  border-top: 5px solid rgb(251, 255, 44);
-  border-bottom: 5px solid rgb(255, 252, 96);
+#logo {
+  margin-left: 30px;
 }
 
 .nav-menu {
-  float: right;
-  padding: 14px 30px;
-  padding-right: 80px;
-  padding-top: 40px;
-
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu a {
@@ -105,11 +101,13 @@ img {vertical-align: middle;} */
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
   transition: background-color 0.6s ease;
 }
 
 .active {
   background-color: #717171;
+  cursor: default;
 }
 
 /* Fading animation */
@@ -142,15 +140,18 @@ img {vertical-align: middle;} */
   padding:20px;
   margin-top: 20px;
   margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
 }
 
-.description-item{grid-area: description}
 .description-item {
   width: 380px;
   padding:20px;
   border: 1px solid  rgb(243, 243, 226);
   border-radius: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: inline-block;
 }
 
@@ -190,8 +191,9 @@ img {vertical-align: middle;} */
 }
 
 .ticket-container {
-  padding: 20px;
-  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .ticket-item {
@@ -200,6 +202,11 @@ img {vertical-align: middle;} */
   margin: 10px;
   display: inline-block;
   padding: 7px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
 }
 
 .ticket-item h3 {
@@ -217,8 +224,11 @@ img {vertical-align: middle;} */
 
 .ticket-item .ticket-img {
   opacity: 1;
-  border-radius: 5px;
   transition: .5s ease;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 230px;
 }
 
 .ticket-item:hover .ticket-img {
