@@ -2,7 +2,7 @@
 
 ## Intro
 
-This README is meant to demonstrate completion of the non-code portions of the project, as described in Part 1 of the Instructions.
+This README is meant to demonstrate completion of the non-code portions of the project, as described in Part 1 of the Instructions. This section was written entirely by Anthony Summerville. For a better idea of what the group as a whole was up to, visit `pdf/brainstorm.pdf`
 
 ## Purpose of Website
 
@@ -27,4 +27,4 @@ The common theme among all of these is that they start with a large, full-width 
 
 ## Structure Identification / Wireframes
 
-The wireframes can be found in `insert folder name here`
+The wireframes can be found in `pdf/wireframes.pdf`. Wireframes made by Polina
