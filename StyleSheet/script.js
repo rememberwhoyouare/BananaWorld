@@ -1,34 +1,31 @@
-var slideIndex = 0;
+var slideIndex = -1;
 showSlides();
 
 function showSlides() {
-  var slides = document.getElementsByClassName("mySlides");
+  let container = document.getElementsByClassName("slideshow-container")[0];
+  var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
-  hideSlides();
+  renderDots();
   slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  if (slideIndex >= slides.length) slideIndex = 0;
+  container.scroll(container.offsetWidth * slideIndex, 0);
+  dots[slideIndex].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-function hideSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+function currentSlide(slide) {
+  let container = document.getElementsByClassName("slideshow-container")[0];
   var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  } 
+  renderDots();
+  slideIndex = slide;
+  container.scroll(container.offsetWidth * slideIndex, 0);
+  dots[slideIndex].className += " active";
+}
+
+function renderDots() {
+  var i;
+  var dots = document.getElementsByClassName("dot");
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-}
-
-function currentSlide(slide) {
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  hideSlides();
-  slideIndex = slide;
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
 }
