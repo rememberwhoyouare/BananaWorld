@@ -253,6 +253,13 @@ img {vertical-align: middle;} */
   padding-left: 20px;
 }
 
+.direction-box {
+  border: 1px solid rgba(238, 232, 170, 70%);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
 
 /* CONTACT FORM */
 
@@ -306,6 +313,9 @@ input[type=text], select, textarea {
     padding-left: 50px;
   }
 
+ .map {
+   
+ }
   /* #contactf {
     text-align: center;
   } */
