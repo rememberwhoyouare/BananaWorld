@@ -91,11 +91,18 @@ p{
 img {vertical-align: middle;} */
 
 /* Slideshow container */
-.slideshow-container {grid-area: slideshow;}
 .slideshow-container {
   width: 100%;
   position: relative;
   margin: auto;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  flex-basis: 100%;
+  flex-shrink: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -313,9 +320,6 @@ input[type=text], select, textarea {
     padding-left: 50px;
   }
 
- .map {
-   
- }
   /* #contactf {
     text-align: center;
   } */
