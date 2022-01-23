@@ -7,31 +7,30 @@
         <!-- <meta name="author" content="Polina Volskaia, Ludovico Angelini, "> Please, add your name as an author  -->
         <meta name="description" content="Banana World Official Website">
         <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+        <script src="showMenu.js" async defer></script>
+
     </head>
 
-    <div class="grid-container-index">
+    <body>
         <!-- Top navigation bar -->
         <div class="header">
+            <div class="nav-dropdown">
+                <div class="nav-menu-icon" onclick="mobileMenuSwitch()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            
             <a href ="index.html">
                 <img src="img/logo2.png" alt="Banana Land logo" id="logo" style="max-height: 100%;"/>
             </a>
 
-            
-                <div class="nav-menu">
-                    <div class="nav-item">
-                        <a href="index.html">ATTRACTIONS</a>
-                    </div>
-                    
-                    <div class="nav-item">
-                        <a href="tickets.html">TICKETS</a>
-                    </div>
-                    
-                    <div class="nav-item">
-                        <a href="contacts.html">HOW TO REACH US</a>
-                    </div>
-                    
-                </div>
+            <div class="nav-menu">
+                <a href="tickets.html">TICKETS</a>
+                <a href="contacts.html">HOW TO REACH US</a>
             </div>
+        </div>
         
         <div class="ticket-img-container"> 
             <img src="img/ticketPage.jpeg" alt="Banana Background" id="ticket-banner">
